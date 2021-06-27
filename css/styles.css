@@ -4,6 +4,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --font-color: #ffffff;
 }
 
 /* Сброс параметров отступов */
@@ -27,8 +28,7 @@ ol {
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
-  /* background: #e5e5e5; */
-  background: #ffff;
+  background: var(--font-color);
 }
 img {
   display: block;
@@ -44,10 +44,10 @@ img {
 /* Шапка  logo */
 
 .head {
-  padding-top: 27px;
-  padding-bottom: 37px;
+  padding-top: 24px;
+  padding-bottom: 35px;
   border-bottom: 1px solid #ececec;
-  background: #ffffff;
+  background: var(--font-color);
 }
 
 .haed-conteiner {
@@ -146,7 +146,8 @@ img {
 }
 
 .heroi {
-  margin-bottom: 82px;
+  /* margin-bottom: 82px; */
+  padding-bottom: 280px;
   padding-top: 200px;
   background: #2f303a;
   align-items: center;
@@ -163,11 +164,10 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--font-color);
 }
 .button-heroi {
   padding: 10px 32px;
-  margin-bottom: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -177,7 +177,7 @@ img {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #ffffff;
+  color: var(--font-color);
   cursor: pointer;
 }
 .button-heroi:hover,
@@ -188,22 +188,20 @@ img {
 /* Особенности */
 
 .skills {
-  /* background: #e5e5e5; */
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .skills-list-item:not(:last-child) {
   margin-right: 30px;
 }
 .skills-list-item {
   width: 270px;
-  height: 101px;
-  left: 1115px;
-  top: 774px;
 }
 .skills-list {
   display: flex;
 }
 .skills-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -220,8 +218,7 @@ img {
 /* Чем мы занимаемся */
 
 .work {
-  margin-bottom: 86px;
-  /* background: #e5e5e5; */
+  padding-bottom: 94px;
 }
 .work-list {
   display: flex;
@@ -244,9 +241,8 @@ img {
 
 .command {
   background: #f5f4fa;
-  padding-top: 102px;
-  padding-bottom: 86px;
-  margin-bottom: 8px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .command-title {
   margin-bottom: 50px;
@@ -287,24 +283,27 @@ img {
   color: var(--title-text-color);
 }
 .command-profestion {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .command-photo {
-  background: #ffffff;
-  margin-bottom: 30px;
+  background: var(--font-color);
+}
+.card-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Подвал */
 
 .logo-footer {
+  display: block;
   margin-bottom: 20px;
   margin-right: 0px;
 }
 .logo2 {
-  color: #ffffff;
+  color: var(--font-color);
 }
 .basement {
   padding-top: 60px;
@@ -313,11 +312,17 @@ img {
 }
 
 .address-link {
+  display: block;
+  margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffff;
+}
+.address-mail {
+  display: block;
+  margin-bottom: 9px;
 }
 .address-mail,
 .address-phon {
@@ -345,17 +350,16 @@ img {
 /* Фильтр*/
 
 .section-filter {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .filter-list {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 .filter-button {
   padding: 6px 22px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -373,7 +377,7 @@ img {
 
 .filter-button:hover,
 .filter-button:focus {
-  color: #ffffff;
+  color: var(--font-color);
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -407,13 +411,13 @@ img {
   flex-basis: calc((100% / 3)-30px);
   margin-left: 30px;
   margin-top: 30px;
-  background: #ffffff;
+  background: var(--font-color);
 
   box-sizing: border-box;
 }
 .border-box {
   padding: 20px 24px;
-  background: #ffffff;
+  background: var(--font-color);
   border: 1px solid #eeeeee;
   border-top: none;
   box-sizing: border-box;
